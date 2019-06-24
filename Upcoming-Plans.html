@@ -144,7 +144,7 @@
 			request = new XMLHttpRequest(); // message sent to server 
 			var fd = new FormData();  
 			fd.append("request", "GetPlans"); 
-			fd.append("ID", "100"); 
+			
 			request.onreadystatechange = ServerResponded; // setup callback (Asynchronous)
 			request.open("POST", "php/request.php"); // prepare POST message
 			request.send(fd); 
